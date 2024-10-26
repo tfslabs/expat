@@ -31,6 +31,7 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          rm expat-2.6.2.tar.xz
           git add .
           git commit -m "expat core forking for GitHub Actions, version 2.6.2"
           git push
